@@ -1,0 +1,31 @@
+{
+  "name": "chinese-character-helper",
+  "version": "1.0.0",
+  "description": "A collection of helper function to retrieve the chang jie / pinyin / cantonese pinyin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharechiwai/chinese-character-helper.git"
+  },
+  "keywords": [
+    "chinese",
+    "character",
+    "helper",
+    "chinese",
+    "pinyin",
+    "cantonese",
+    "pinyin",
+    "changjie",
+    "look",
+    "up"
+  ],
+  "author": "sharechiwai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharechiwai/chinese-character-helper/issues"
+  },
+  "homepage": "https://github.com/sharechiwai/chinese-character-helper#readme"
+}
