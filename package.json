@@ -4,7 +4,8 @@
   "description": "A collection of helper function to retrieve the chang jie / pinyin / cantonese pinyin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js ."
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/sharechiwai/chinese-character-helper/issues"
   },
-  "homepage": "https://github.com/sharechiwai/chinese-character-helper#readme"
+  "homepage": "https://github.com/sharechiwai/chinese-character-helper#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3"
+  }
 }
