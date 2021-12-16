@@ -2,10 +2,10 @@ const characterToChangJieLookUpData = require('./data/characterToChangjieLookUp.
 const characterToCantonesePinyinLookUp = require('./data/characterToCantonesePinyinLookUp.json');
 const cantonesePinyinToCharacterLookUp = require('./data/cantonesePinyinToCharacterLookUp.json');
 const ChineseCharacterHelper = {
-  isChineseCharacter: str => {
+  isChineseCharacter: (str) => {
     return /^[\u4e00-\u9fa5]+$/.test(str);
   },
-  getChangJieByCharacter: function (character) {
+  getChangJieByCharacter: (character) => {
     if (ChineseCharacterHelper.isChineseCharacter(character)) {
       if (character.length > 1) {
         return characterToChangJieLookUpData[character[0]];
@@ -15,10 +15,10 @@ const ChineseCharacterHelper = {
     }
     return character;
   },
-  getCharacterByCantonesePinyin: pinyin => {
+  getCharacterByCantonesePinyin: (pinyin) => {
     return cantonesePinyinToCharacterLookUp[pinyin];
   },
-  getCantonesePinyinByCharacter: character => {
+  getCantonesePinyinByCharacter: (character) => {
     if (ChineseCharacterHelper.isChineseCharacter(character)) {
       if (character.length > 1) {
         return characterToCantonesePinyinLookUp[character[0]];
@@ -27,7 +27,7 @@ const ChineseCharacterHelper = {
       }
     }
     return character;
-  }
+  },
 };
 
 export default ChineseCharacterHelper;
