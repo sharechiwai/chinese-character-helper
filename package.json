@@ -2,7 +2,7 @@
   "name": "chinese-character-helper",
   "version": "1.0.0",
   "description": "A collection of helper function to retrieve the chang jie / pinyin / cantonese pinyin",
-  "main": "index.js",
+  "main": "chinese-character-helper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .js .",

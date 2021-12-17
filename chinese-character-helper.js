@@ -73,4 +73,4 @@ const ChineseCharacterHelper = {
   },
 };
 
-export default ChineseCharacterHelper;
+module.exports = ChineseCharacterHelper;
