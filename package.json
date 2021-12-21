@@ -4,7 +4,7 @@
   "description": "A collection of helper function to retrieve the chang jie / pinyin / cantonese pinyin",
   "main": "chinese-character-helper.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint --ext .js .",
     "format": "prettier --write **/*.js"
   },
@@ -34,6 +34,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
+    "jest": "^27.4.5",
     "prettier": "^2.5.1"
   }
 }

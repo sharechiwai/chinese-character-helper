@@ -19,7 +19,7 @@ const ChineseCharacterHelper = {
     }
     return character;
   },
-  getChangJieByCharacters: function (str) {
+  getChangJieByCharacters: (str) => {
     const characters = [];
     for (let i = 0; i < str.length; i++) {
       const character = str[i];
@@ -27,12 +27,10 @@ const ChineseCharacterHelper = {
         const changJieCharacter =
           ChineseCharacterHelper.getChangJieByCharacter(character);
         if (changJieCharacter !== undefined) {
-          characters.push(changJieCharacter + ' ');
+          characters.push(changJieCharacter);
         } else {
-          characters.push(character + ' ');
+          characters.push(character);
         }
-      } else {
-        characters.push(character + ' ');
       }
     }
     return characters;
@@ -62,14 +60,15 @@ const ChineseCharacterHelper = {
         } else {
           pinyin.push(character);
         }
-      } else {
-        pinyin.push(character);
       }
     }
     return pinyin;
   },
-  formatResult: (result, joinCharacter) => {
-    return result.join(joinCharacter);
+  formatResult: (input, joinCharacter) => {
+    if (!Array.isArray(input)) {
+      throw new Error('input should be an array');
+    }
+    return input.join(joinCharacter);
   },
 };
 
